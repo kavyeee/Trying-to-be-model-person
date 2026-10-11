@@ -13,7 +13,7 @@ body{background:var(--wine);color:var(--cream);font-family:'Caveat',cursive;over
   background-image:radial-gradient(circle at 50% 40%,#7d2629,var(--wine) 70%)}
 .scene{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px}
 body:not(.opened) .scene:not(:first-child){display:none}
-nav{display:none}
+
 h1,h2{font-family:'Chonburi',serif;font-weight:400;text-align:center}
 h1{font-size:clamp(32px,9vw,64px);margin-bottom:8px}
 h2{font-size:clamp(24px,6vw,40px);margin-bottom:18px}
@@ -22,7 +22,7 @@ p{font-size:clamp(20px,4.6vw,26px);line-height:1.25}
 .polaroid{background:#fff;padding:10px 10px 34px;box-shadow:0 8px 22px #0006;position:relative}
 .polaroid .ph{width:100%;aspect-ratio:1;background:#d9c9b8 center/cover;display:grid;place-items:center;color:#8a6f5a;font-size:20px}
 .polaroid span{position:absolute;bottom:6px;left:0;right:0;text-align:center;color:var(--ink);font-size:22px}
-nav{display:none}
+nav{display:none!important}
 /* 1 envelope */
 .env{position:relative;width:min(80vw,340px);aspect-ratio:1.4;cursor:pointer;transition:transform .3s}
 .env:hover{transform:scale(1.03) rotate(-1deg)}
