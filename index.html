@@ -11,9 +11,9 @@
 
 body{background:var(--wine);color:var(--cream);font-family:'Caveat',cursive;overflow-x:hidden;
   background-image:radial-gradient(circle at 50% 40%,#7d2629,var(--wine) 70%)}
-.scene{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  padding:24px 20px 90px;opacity:0;pointer-events:none;transition:opacity .6s}
-.scene.on{opacity:1;pointer-events:auto}
+.scene{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px}
+body:not(.opened) .scene:not(:first-child){display:none}
+nav{display:none}
 h1,h2{font-family:'Chonburi',serif;font-weight:400;text-align:center}
 h1{font-size:clamp(32px,9vw,64px);margin-bottom:8px}
 h2{font-size:clamp(24px,6vw,40px);margin-bottom:18px}
